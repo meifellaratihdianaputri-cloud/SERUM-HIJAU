@@ -1,0 +1,97 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND OCEAN */
+.ocean-bg {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef);
+    padding: 40px 20px;
+}
+
+/* GLASS EFFECT */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+}
+
+/* LOGIN */
+.login-box {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.login-box h1 { font-family: 'Playfair Display', serif; margin-bottom: 0; }
+.login-box h3 { margin-top: 5px; font-weight: normal; }
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.login-box button {
+    background: #023e8a;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 36px; }
+.logout-btn {
+    background: #d90429;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* PRODUCT */
+.product {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.product-image input {
+    width: 100%;
+}
+
+.product-info h2 { font-family: 'Playfair Display', serif; margin-top: 0; }
+.product-info p { line-height: 1.8; text-align: justify; }
+.price { font-size: 22px; font-weight: bold; color: #ffd166; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) { .product { grid-template-columns: 1fr; } }
